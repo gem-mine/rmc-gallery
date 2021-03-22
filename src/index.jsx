@@ -170,6 +170,11 @@ class Gallery extends Component {
     document.body.style.overflow = 'hidden'
   }
 
+  handleStopPropagation = (e) => {
+    e.stopPropagation()
+    e.nativeEvent.stopImmediatePropagation()
+  }
+
   removeScrollingEffect = () => {
     document.body.style.overflow = ''
     document.body.style.paddingRight = ''
@@ -615,9 +620,12 @@ class Gallery extends Component {
     const imageBoxes = this.renderImageBox()
 
     return (
-      <div className={classNames(prefixCls, {
-        [`${prefixCls}-inline`]: displayMode === 'inline'
-      })}>
+      <div
+        className={classNames(prefixCls, {
+          [`${prefixCls}-inline`]: displayMode === 'inline'
+        })}
+        onClick={this.handleStopPropagation}
+      >
         <div
           className={`${prefixCls}-content`}
           style={{
