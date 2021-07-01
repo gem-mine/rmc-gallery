@@ -1,7 +1,7 @@
 {
   "name": "@gem-mine/rmc-gallery",
   "port": "8020",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "移动端图片查看器组件",
   "license": "MIT",
   "main": "lib/index.js",
