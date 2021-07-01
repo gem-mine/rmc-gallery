@@ -8,10 +8,6 @@
 
 - 查看图片的时候
 
-## 浏览器支持
-
-IE 9+
-
 ## 安装
 
 ```bash
@@ -44,7 +40,7 @@ import Gallery from '@gem-mine/rmc-gallery'
 
 const imageOriginal = [
       {
-        original: '//img.zmei.me/gm/a801236bjw1ez812gy3g8j20rs0rs0z5.jpg',
+        original: 'http://这是个无效的图片路径',
         thumbnail: '//img.zmei.me/gm/a801236bjw1ez812gy3g8j20rs0rs0z5-thumb.jpg',
         description: <div>图片描述</div>
       },
